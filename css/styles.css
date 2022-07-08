@@ -593,7 +593,24 @@ address {
   flex-wrap: wrap;
   margin: -15px;
 }
-
+.portfolio-top-text {
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  color: #ffffff;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+  overflow: auto;
+}
+.portfolio-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
 .list-products {
   width: calc(100% / 3 - 30px);
   margin: 15px;
@@ -602,4 +619,7 @@ address {
 .list-products:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.list-products:hover .portfolio-top-text {
+  transform: translateY(0);
 }
