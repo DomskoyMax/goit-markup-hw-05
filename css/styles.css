@@ -118,13 +118,15 @@ address {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.header-menu::after {
+.header-link::after {
   content: "";
   height: 4px;
   width: 48px;
   background: #2196f3;
   border-radius: 2px;
-  margin-top: 28px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 .header-link {
   font-weight: 500;
