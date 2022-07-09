@@ -125,6 +125,8 @@ address {
   letter-spacing: 0.02em;
   color: #212121;
   height: 16px;
+  transition: transform 250ms linear;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mail:hover,
@@ -149,9 +151,10 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-
   display: flex;
   align-items: center;
+  transition: transform 250ms linear;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-soc-icon {
@@ -359,6 +362,8 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 250ms linear;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:hover,
@@ -506,6 +511,8 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 250ms linear;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-soc-link:hover,
@@ -537,6 +544,8 @@ address {
   padding: 6px 22px 6px 22px;
   border: none;
   display: block;
+  transition: transform 250ms linear;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-btm:not(:last-child) {
@@ -605,6 +614,7 @@ address {
   height: 100%;
   transform: translateY(100%);
   transition: transform 250ms linear;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
 }
 .portfolio-top-wrap {
@@ -614,6 +624,8 @@ address {
 .list-products {
   width: calc(100% / 3 - 30px);
   margin: 15px;
+  transition: transform 250ms linear;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-products:hover,
 .list-products:focus {
