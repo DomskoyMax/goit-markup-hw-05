@@ -130,6 +130,10 @@ address {
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
+.header-item:hover {
+  transform: scale(1.1);
+}
+
 .header-link.active::after {
   content: "";
   height: 4px;
@@ -169,7 +173,9 @@ address {
   transition: transform 250ms linear;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.header-soc-link:hover {
+  transform: scale(1.1);
+}
 .header-soc-icon {
   margin-right: 10px;
   fill: #757575;
@@ -380,7 +386,9 @@ address {
 .team-soc-item:last-child {
   margin-right: 0;
 }
-
+.team-soc-link:hover {
+  transform: rotate(360deg);
+}
 .team-soc-link {
   width: 100%;
   height: 100%;
@@ -435,6 +443,11 @@ address {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: transform 250ms linear;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-link:hover {
+  transform: scale(1.1);
 }
 .clients-soc-icon {
   fill: #afb1b8;
@@ -555,7 +568,9 @@ address {
 .join-soc-icon {
   fill: #ffffff;
 }
-
+.join-soc-link:hover {
+  transform: scale(1.2);
+}
 /* PORTFOLIO */
 
 .portfolio-btm {
@@ -574,7 +589,9 @@ address {
   transition: transform 250ms linear;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.portfolio-btm:hover {
+  transform: scale(1.1);
+}
 .main-btm:not(:last-child) {
   margin-right: 8px;
 }
@@ -651,8 +668,6 @@ address {
 .list-products {
   width: calc(100% / 3 - 30px);
   margin: 15px;
-  transition: transform 250ms linear;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-products:hover,
 .list-products:focus {
