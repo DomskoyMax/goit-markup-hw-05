@@ -215,7 +215,7 @@ address {
   margin: 0 auto;
 }
 
-.header-btm {
+.header-btn {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -231,6 +231,11 @@ address {
   min-width: 200px;
   height: 50px;
   border: none;
+  transition: transform 250ms linear;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-btn:hover {
+  transform: scale(1.1);
 }
 
 /* Main */
@@ -573,7 +578,7 @@ address {
 }
 /* PORTFOLIO */
 
-.portfolio-btm {
+.portfolio-btn {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -589,10 +594,10 @@ address {
   transition: transform 250ms linear;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-btm:hover {
+.portfolio-btn:hover {
   transform: scale(1.1);
 }
-.main-btm:not(:last-child) {
+.main-btn:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -601,7 +606,7 @@ address {
   padding-top: 94px;
 }
 
-.list-btm {
+.list-btn {
   display: flex;
   justify-content: center;
   margin-bottom: 56px;
@@ -632,8 +637,8 @@ address {
   color: var(--text-color);
 }
 
-.portfolio-btm:hover,
-.portfolio-btm:focus {
+.portfolio-btn:hover,
+.portfolio-btn:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -698,6 +703,7 @@ address {
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform 250ms linear;
+  padding: 40px;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(360deg);
@@ -719,4 +725,37 @@ address {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.modal-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+
+  color: #757575;
 }
