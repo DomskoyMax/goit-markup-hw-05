@@ -190,6 +190,7 @@ address {
 .header-soc-icon {
   margin-right: 10px;
   fill: #757575;
+  transition: fill 250ms;
 }
 
 .header-tel {
@@ -413,7 +414,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 250ms linear;
+  transition: transform 250ms linear, background-color 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -429,6 +430,11 @@ address {
 
 .masters-soc-icon {
   fill: #afb1b8;
+  transition: fill 250ms;
+}
+.clients {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 .clients-title {
   font-weight: 700;
@@ -436,7 +442,6 @@ address {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 94px;
   color: var(--header-color);
 }
 .clients-item {
@@ -448,7 +453,6 @@ address {
 }
 .clients-list {
   display: flex;
-  padding-bottom: 94px;
   margin-top: 50px;
 }
 .clients-link {
@@ -459,7 +463,7 @@ address {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: transform 250ms linear;
+  transition: transform 250ms linear, border 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover {
@@ -467,6 +471,7 @@ address {
 }
 .clients-soc-icon {
   fill: #afb1b8;
+  transition: fill 250ms;
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -567,7 +572,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 250ms linear;
+  transition: transform 250ms linear, background-color 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
