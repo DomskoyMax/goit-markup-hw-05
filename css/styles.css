@@ -137,7 +137,7 @@ address {
   letter-spacing: 0.02em;
   color: #212121;
   height: 16px;
-  transition: transform 250ms linear;
+  transition: transform 250ms linear, color 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
@@ -181,7 +181,7 @@ address {
   color: #757575;
   display: flex;
   align-items: center;
-  transition: transform 250ms linear;
+  transition: transform 250ms linear, color 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-soc-link:hover {
@@ -602,7 +602,7 @@ address {
   padding: 6px 22px 6px 22px;
   border: none;
   display: block;
-  transition: transform 250ms linear;
+  transition: transform 250ms linear, color 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-btn:hover {
