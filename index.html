@@ -447,18 +447,80 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
-          <input
-            type="text"
-            name="user-name"
-            class="modal-input"
-            placeholder="Имя"
-          />
-          <input
-            type="tel"
-            name="user-tel"
-            class="modal-input"
-            placeholder="Телефон"
-          />
+          <div class="modal-field">
+            <label class="modal-label" for="user-name">Имя</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                placeholder="Максим"
+                minlength="2"
+                required
+                id="user-name"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-tel">Телефон</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                name="user-tel"
+                class="modal-input"
+                placeholder=""
+                minlength="13"
+                maxlength="13"
+                required
+                id="user-tel"
+                value="+38"
+              /><svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-email">Почта</label>
+            <div class="input-wrap">
+              <input
+                type="email"
+                name="user-email"
+                class="modal-input"
+                placeholder="info@devstudio.com"
+                required
+                id="user-email"
+              /><svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="modal-text">Комментарий</label>
+            <textarea
+              name="modal-text"
+              id="modal-text"
+              class="model-text-area"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="modal-field-check">
+            <input
+              type="checkbox"
+              class="input-check visually-hidden"
+              name="privacy"
+              id="privacy"
+            />
+            <label for="privacy" class="check-text"
+              ><span
+                ><svg class="check-icon" width="11" height="8">
+                  <use href="./images/icons.svg#icon-check"></use></svg></span
+              >Соглашаюсь с рассылкой и принимаю&nbsp
+              <a href="">Условия договора</a>
+            </label>
+          </div>
           <button type="submit" class="header-btn">Отправить</button>
         </form>
       </div>
