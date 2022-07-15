@@ -532,7 +532,12 @@ address {
 .footer-link:not(:last-child) {
   margin-bottom: 9px;
 }
-
+.fooder-wrap {
+  flex-grow: 1;
+}
+.join {
+  margin-left: 70px;
+}
 .join-title {
   font-weight: 700;
   font-size: 14px;
@@ -540,7 +545,6 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-left: 70px;
 }
 .container-join {
   display: flex;
@@ -550,7 +554,7 @@ address {
 .join-soc-list {
   display: flex;
   margin-top: 20px;
-  margin-left: 70px;
+
   justify-content: center;
 }
 
@@ -627,12 +631,9 @@ address {
   height: 50px;
   color: #ffffff;
   border: none;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   margin-left: 12px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-46%);
 }
 
 .footer-soc-icon {
