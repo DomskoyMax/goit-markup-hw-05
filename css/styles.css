@@ -632,13 +632,14 @@ address {
   margin-left: 12px;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-46%);
 }
 
 .footer-soc-icon {
   margin-left: 10px;
   justify-content: center;
 }
+
 /* PORTFOLIO */
 
 .portfolio-btn {
